@@ -373,20 +373,10 @@
 
 
 <span class="k">def</span> <span class="nf">get_raw_sfreq</span><span class="p">(</span><span class="n">raw_fname</span><span class="p">):</span>
-<<<<<<< HEAD
     <span class="kn">from</span> <span class="nn">mne.io</span> <span class="k">import</span> <span class="n">Raw</span>
 
     <span class="n">raw</span> <span class="o">=</span> <span class="n">Raw</span><span class="p">(</span><span class="n">raw_fname</span><span class="p">,</span> <span class="n">preload</span><span class="o">=</span><span class="k">True</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">raw</span><span class="o">.</span><span class="n">info</span><span class="p">[</span><span class="s">&#39;sfreq&#39;</span><span class="p">]</span>
-=======
-    <span class="kn">import</span> <span class="nn">mne</span>
-
-    <span class="k">try</span><span class="p">:</span>
-        <span class="n">data</span> <span class="o">=</span> <span class="n">mne</span><span class="o">.</span><span class="n">io</span><span class="o">.</span><span class="n">read_raw_fif</span><span class="p">(</span><span class="n">raw_fname</span><span class="p">)</span>
-    <span class="k">except</span><span class="p">:</span>
-        <span class="n">data</span> <span class="o">=</span> <span class="n">mne</span><span class="o">.</span><span class="n">read_epochs</span><span class="p">(</span><span class="n">raw_fname</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">data</span><span class="o">.</span><span class="n">info</span><span class="p">[</span><span class="s">&#39;sfreq&#39;</span><span class="p">]</span>
->>>>>>> 371e51b3b3ad6937ad7330ecdb0b5ae9584dc494
 
 
 <span class="c"># def get_epochs_info(raw_fname):</span>

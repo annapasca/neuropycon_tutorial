@@ -184,13 +184,6 @@
     <span class="n">is_fixed</span> <span class="o">=</span> <span class="n">traits</span><span class="o">.</span><span class="n">Bool</span><span class="p">(</span><span class="s">&#39;False&#39;</span><span class="p">,</span> <span class="n">usedefault</span><span class="o">=</span><span class="k">True</span><span class="p">,</span>
                            <span class="n">desc</span><span class="o">=</span><span class="s">&#39;if true we use fixed orientation&#39;</span><span class="p">,</span>
                            <span class="n">mandatory</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
-<<<<<<< HEAD
-=======
-                           
-    <span class="n">is_mixed</span> <span class="o">=</span> <span class="n">traits</span><span class="o">.</span><span class="n">Bool</span><span class="p">(</span><span class="s">&#39;False&#39;</span><span class="p">,</span> <span class="n">usedefault</span><span class="o">=</span><span class="k">True</span><span class="p">,</span>
-                           <span class="n">desc</span><span class="o">=</span><span class="s">&#39;if true we use mixed orientation&#39;</span><span class="p">,</span>
-                           <span class="n">mandatory</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
->>>>>>> 371e51b3b3ad6937ad7330ecdb0b5ae9584dc494
 
     <span class="n">events_id</span> <span class="o">=</span> <span class="n">traits</span><span class="o">.</span><span class="n">Dict</span><span class="p">(</span><span class="k">None</span><span class="p">,</span> <span class="n">desc</span><span class="o">=</span><span class="s">&#39;the id of all events to consider.&#39;</span><span class="p">,</span>
                             <span class="n">mandatory</span><span class="o">=</span><span class="k">False</span><span class="p">)</span>
@@ -287,10 +280,6 @@
         <span class="n">fwd_filename</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">fwd_filename</span>
         <span class="n">is_epoched</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">is_epoched</span>
         <span class="n">is_fixed</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">is_fixed</span>
-<<<<<<< HEAD
-=======
-        <span class="n">is_mixed</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">is_mixed</span>
->>>>>>> 371e51b3b3ad6937ad7330ecdb0b5ae9584dc494
         <span class="n">events_id</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">events_id</span>
         <span class="n">t_min</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">t_min</span>
         <span class="n">t_max</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">t_max</span>
@@ -308,11 +297,7 @@
                                  <span class="n">t_min</span><span class="p">,</span> <span class="n">t_max</span><span class="p">,</span> <span class="n">is_evoked</span><span class="p">,</span>
                                  <span class="n">snr</span><span class="p">,</span> <span class="n">inv_method</span><span class="p">,</span> <span class="n">parc</span><span class="p">,</span>
                                  <span class="n">aseg</span><span class="p">,</span> <span class="n">aseg_labels</span><span class="p">,</span> <span class="n">save_stc</span><span class="p">,</span>
-<<<<<<< HEAD
                                  <span class="n">is_fixed</span><span class="p">)</span>
-=======
-                                 <span class="n">is_fixed</span><span class="p">,</span> <span class="n">is_mixed</span><span class="p">)</span>
->>>>>>> 371e51b3b3ad6937ad7330ecdb0b5ae9584dc494
 
         <span class="k">return</span> <span class="n">runtime</span>
 
