@@ -238,7 +238,12 @@
         <span class="c">#spectral.inputs.sfreq = sfreq</span>
         <span class="n">spectral</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">multi_con</span> <span class="o">=</span> <span class="n">multi_con</span>
         <span class="n">spectral</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">mode</span> <span class="o">=</span> <span class="n">mode</span>
+<<<<<<< HEAD
         <span class="n">spectral</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">epoch_window_length</span> <span class="o">=</span> <span class="n">epoch_window_length</span>
+=======
+        <span class="k">if</span> <span class="n">epoch_window_length</span><span class="p">:</span>
+            <span class="n">spectral</span><span class="o">.</span><span class="n">inputs</span><span class="o">.</span><span class="n">epoch_window_length</span> <span class="o">=</span> <span class="n">epoch_window_length</span>
+>>>>>>> 371e51b3b3ad6937ad7330ecdb0b5ae9584dc494
         
         <span class="n">pipeline</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">inputnode</span><span class="p">,</span> <span class="s">&#39;sfreq&#39;</span><span class="p">,</span> <span class="n">spectral</span><span class="p">,</span> <span class="s">&#39;sfreq&#39;</span><span class="p">)</span>
         <span class="n">pipeline</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">inputnode</span><span class="p">,</span> <span class="s">&#39;ts_file&#39;</span><span class="p">,</span> <span class="n">spectral</span><span class="p">,</span> <span class="s">&#39;ts_file&#39;</span><span class="p">)</span>
