@@ -1,3 +1,3 @@
-.. _includeme:
+.. _includeme_ephypype:
 
 .. include:: ../../ephypype/README.rst

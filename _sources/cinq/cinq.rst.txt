@@ -9,13 +9,13 @@ Download scripts
 
 .. code-block:: bash
 
-    git clone https://github.com/davidmeunier79/neuropycon_workshop.git
+    git clone https://github.com/davidmeunier79/neuropype_workshop.git
     cd source_code
 
-Upgrade ephypype
+Upgrade neuropype_ephy
 ----------------------
  
-Go to the directory where you installed ephypype 
+Go to the directory where you installed neuropype_ephy 
  
 .. code-block:: bash
 

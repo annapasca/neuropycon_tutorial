@@ -1,3 +1,4 @@
+.. _includeme_graphpype:
 
 ********
 README :
