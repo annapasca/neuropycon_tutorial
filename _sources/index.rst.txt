@@ -73,8 +73,8 @@ Install ephypype
 
 see :ref:`includeme_ephypype` for more information
 
-Install neuropype_cli
----------------------
+Install clipype
+---------------
 
 .. code-block:: bash
 
