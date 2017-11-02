@@ -62,19 +62,19 @@ Installation
 ============
 
 Install ephypype
-----------------------
+----------------
 
 .. code-block:: bash
 
-    git clone https://github.com/annapasca/ephypype.git
+    git clone https://github.com/neuropycon/ephypype.git
     cd ephypype
-    pip install .
+    python setup.py develop
     cd ..
 
-see :ref:`includeme` for more information
+see :ref:`includeme_ephypype` for more information
 
-Install neuropype_cli
----------------------
+Install clipype
+---------------
 
 .. code-block:: bash
 
@@ -90,16 +90,16 @@ see |README_cli| for more information.
    <a href="https://github.com/dmalt/neuropycon_cli/blob/master/README.md" target="_blank">README</a>
 
 Install graphpype
------------------------
+-----------------
 
 .. code-block:: bash
 
-    git clone https://github.com/davidmeunier79/graphpype.git
+    git clone https://github.com/neuropycon/graphpype.git
     cd graphpype
-    pip install .
+    python setup.py develop
     cd ..
 
-see |README_graph| for more information.
+see see :ref:`includeme_graphpype` for more information.
 
 .. |README_graph| raw:: html
 
@@ -114,7 +114,7 @@ Packages
    :maxdepth: 2
 
    ephypype/ephypype
-   neuropycon_cli <https://github.com/dmalt/neuropype_cli>
+   clipype <https://github.com/dmalt/neuropype_cli>
    graphpype/index
 
 
