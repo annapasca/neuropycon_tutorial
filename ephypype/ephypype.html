@@ -1,0 +1,359 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>ephypype &mdash; neuropycon 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="neuropycon 0.1 documentation" href="../index.html"/>
+        <link rel="next" title="Preprocessing pipeline" href="pipelines/preproc_meeg.html"/>
+        <link rel="prev" title="Neuropycon documentation" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> neuropycon
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">ephypype</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#pipelines">Pipelines</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pipelines/preproc_meeg.html">Preprocessing pipeline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipelines/power.html">Power pipeline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipelines/source_reconstruction.html">Source reconstruction pipeline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipelines/spectral_connectivity.html">Connectivity pipeline</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="includeme.html">README</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="ephypype.interfaces.html">ephypype.interfaces package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ephypype.nodes.html">ephypype.nodes package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="ephypype.pipelines.html">ephypype.pipelines package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#modules">Modules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ephypype-aux-tools">ephypype.aux_tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ephypype-compute-fwd-problem">ephypype.compute_fwd_problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ephypype-compute-inv-problem">ephypype.compute_inv_problem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ephypype-fif2ts">ephypype.fif2ts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ephypype-import-ctf">ephypype.import_ctf</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ephypype-import-mat">ephypype.import_mat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ephypype-import-txt">ephypype.import_txt</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ephypype-power">ephypype.power</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ephypype-preproc">ephypype.preproc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ephypype-spectral">ephypype.spectral</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/dmalt/neuropype_cli">clipype</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../graphpype/index.html">Welcome to Graphpype’s documentation!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../graphpype/index.html#indices-and-tables">Indices and tables</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../examples/examples.html">Examples</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../cinq/cinq.html">CINQ</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">neuropycon</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>ephypype</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/ephypype/ephypype.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="ephypype">
+<span id="id1"></span><h1>ephypype<a class="headerlink" href="#ephypype" title="Permalink to this headline">¶</a></h1>
+<p>The ephypype package includes pipelines for electrophysiology analysis.
+It’s based mainly on MNE-Python package, as well as more standard python libraries such as Numpy and Scipy.
+Current implementations allow for</p>
+<ul class="simple">
+<li>MEG/EEG data import</li>
+<li>MEG/EEG data pre-processing and cleaning by an automatic removal of eyes and heart related artifacts</li>
+<li>sensor or source-level connectivity analyses</li>
+</ul>
+<p>The ephypype package provides the main pipelines in the <a class="reference internal" href="ephypype.pipelines.html#pipelines"><span class="std std-ref">ephypype.pipelines package</span></a>:</p>
+<ul class="simple">
+<li>the <a class="reference internal" href="pipelines/preproc_meeg.html#preproc-meeg"><span class="std std-ref">Preprocessing pipeline</span></a> runs the ICA algorithm for an automatic removal of eyes and heart related artefacts</li>
+<li>the <a class="reference internal" href="pipelines/power.html#power"><span class="std std-ref">Power pipeline</span></a> computes the power spectral density (PSD) on sensor space</li>
+<li>the <a class="reference internal" href="pipelines/source_reconstruction.html#source-reconstruction"><span class="std std-ref">Source reconstruction pipeline</span></a> computes the inverse solution starting from raw/epoched data</li>
+<li>the <a class="reference internal" href="pipelines/spectral_connectivity.html#spectral-connectivity"><span class="std std-ref">Connectivity pipeline</span></a> perform connectivity analysis in sensor or source space</li>
+</ul>
+<div class="section" id="pipelines">
+<h2>Pipelines<a class="headerlink" href="#pipelines" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pipelines/preproc_meeg.html">Preprocessing pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pipelines/power.html">Power pipeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pipelines/source_reconstruction.html">Source reconstruction pipeline</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pipelines/nodes/inv_solution.html">Inverse solution Nodes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pipelines/nodes/inv_solution.html#lead-field-node">Lead Field Node</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipelines/nodes/inv_solution.html#noise-covariance-node">Noise Covariance Node</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pipelines/nodes/inv_solution.html#inverse-solution-node">Inverse Solution Node</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pipelines/spectral_connectivity.html">Connectivity pipeline</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="includeme.html">README</a></li>
+</ul>
+</div>
+<div class="section" id="subpackages">
+<h3>Subpackages<a class="headerlink" href="#subpackages" title="Permalink to this headline">¶</a></h3>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ephypype.interfaces.html">ephypype.interfaces package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ephypype.nodes.html">ephypype.nodes package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ephypype.pipelines.html">ephypype.pipelines package</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="modules">
+<h3>Modules<a class="headerlink" href="#modules" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="ephypype-aux-tools">
+<h3>ephypype.aux_tools<a class="headerlink" href="#ephypype-aux-tools" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="ephypype-compute-fwd-problem">
+<h3>ephypype.compute_fwd_problem<a class="headerlink" href="#ephypype-compute-fwd-problem" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="ephypype-compute-inv-problem">
+<h3>ephypype.compute_inv_problem<a class="headerlink" href="#ephypype-compute-inv-problem" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="ephypype-fif2ts">
+<h3>ephypype.fif2ts<a class="headerlink" href="#ephypype-fif2ts" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="ephypype-import-ctf">
+<h3>ephypype.import_ctf<a class="headerlink" href="#ephypype-import-ctf" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="ephypype-import-mat">
+<h3>ephypype.import_mat<a class="headerlink" href="#ephypype-import-mat" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="ephypype-import-txt">
+<h3>ephypype.import_txt<a class="headerlink" href="#ephypype-import-txt" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="ephypype-power">
+<h3>ephypype.power<a class="headerlink" href="#ephypype-power" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="ephypype-preproc">
+<h3>ephypype.preproc<a class="headerlink" href="#ephypype-preproc" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="ephypype-spectral">
+<h3>ephypype.spectral<a class="headerlink" href="#ephypype-spectral" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="pipelines/preproc_meeg.html" class="btn btn-neutral float-right" title="Preprocessing pipeline" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral" title="Neuropycon documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Dmitrii Altukhov, David Meunier, Annalisa Pascarella.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
