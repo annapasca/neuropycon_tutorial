@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({"sphinx-rtd-theme":[function(require,module,exports){
 var jQuery = (typeof(window) != 'undefined') ? window.jQuery : require('jquery');
 
@@ -168,52 +167,3 @@ if (typeof(window) != 'undefined') {
 }
 
 },{"jquery":"jquery"}]},{},["sphinx-rtd-theme"]);
-=======
-$( document ).ready(function() {
-    // Shift nav in mobile when clicking the menu.
-    $(document).on('click', "[data-toggle='wy-nav-top']", function() {
-      $("[data-toggle='wy-nav-shift']").toggleClass("shift");
-      $("[data-toggle='rst-versions']").toggleClass("shift");
-    });
-    // Close menu when you click a link.
-    $(document).on('click', ".wy-menu-vertical .current ul li a", function() {
-      $("[data-toggle='wy-nav-shift']").removeClass("shift");
-      $("[data-toggle='rst-versions']").toggleClass("shift");
-    });
-    $(document).on('click', "[data-toggle='rst-current-version']", function() {
-      $("[data-toggle='rst-versions']").toggleClass("shift-up");
-    });  
-    // Make tables responsive
-    $("table.docutils:not(.field-list)").wrap("<div class='wy-table-responsive'></div>");
-});
-
-window.SphinxRtdTheme = (function (jquery) {
-    var stickyNav = (function () {
-        var navBar,
-            win,
-            stickyNavCssClass = 'stickynav',
-            applyStickNav = function () {
-                if (navBar.height() <= win.height()) {
-                    navBar.addClass(stickyNavCssClass);
-                } else {
-                    navBar.removeClass(stickyNavCssClass);
-                }
-            },
-            enable = function () {
-                applyStickNav();
-                win.on('resize', applyStickNav);
-            },
-            init = function () {
-                navBar = jquery('nav.wy-nav-side:first');
-                win    = jquery(window);
-            };
-        jquery(init);
-        return {
-            enable : enable
-        };
-    }());
-    return {
-        StickyNav : stickyNav
-    };
-}($));
->>>>>>> 071ecd2ce04f18a18e146875d4c652a2e365611f
